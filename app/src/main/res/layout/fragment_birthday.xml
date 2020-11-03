@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.BirthdayFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:padding="@dimen/_25sdp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whats your Birthdate?"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center"/>
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/btnnxtbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundbtnshaper"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+</LinearLayout>
+</LinearLayout>

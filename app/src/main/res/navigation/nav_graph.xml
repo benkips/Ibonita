@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="Starpint"
+    app:startDestination="@id/loginfragment">
+    <fragment
+        android:id="@+id/loginfragment"
+        android:name="com.ibonita.starpint.auth.Loginfragment"
+        android:label="Starpint"
+        tools:layout="@layout/fragment_loginfragment">
+        <action
+            android:id="@+id/action_loginfragment_to_namefragment"
+            app:destination="@id/namefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/namefragment"
+        android:name="com.ibonita.starpint.auth.Namefragment"
+        android:label="My name"
+        tools:layout="@layout/fragment_namefragment">
+        <action
+            android:id="@+id/action_namefragment_to_birthdayFragment"
+            app:destination="@id/birthdayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthdayFragment"
+        android:name="com.ibonita.starpint.auth.BirthdayFragment"
+        android:label="Birthdate"
+        tools:layout="@layout/fragment_birthday">
+        <action
+            android:id="@+id/action_birthdayFragment_to_genderfragment"
+            app:destination="@id/genderfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderfragment"
+        android:name="com.ibonita.starpint.auth.Genderfragment"
+        android:label="Gender"
+        tools:layout="@layout/fragment_genderfragment">
+        <action
+            android:id="@+id/action_genderfragment_to_phonenofragment"
+            app:destination="@id/phonenofragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordfragment"
+        android:name="com.ibonita.starpint.auth.Passwordfragment"
+        android:label="Password"
+        tools:layout="@layout/fragment_passwordfragment">
+        <action
+            android:id="@+id/action_passwordfragment_to_loginfragment"
+            app:destination="@id/loginfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phonenofragment"
+        android:name="com.ibonita.starpint.auth.Phonenofragment"
+        android:label="Phone number"
+        tools:layout="@layout/fragment_phonenofragment">
+        <action
+            android:id="@+id/action_phonenofragment_to_passwordfragment"
+            app:destination="@id/passwordfragment" />
+    </fragment>
+</navigation>
